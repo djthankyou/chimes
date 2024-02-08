@@ -4,7 +4,6 @@ body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 aside {
@@ -43,25 +42,5 @@ main {
     width: 30px;
     height: 100px;
     background-color: #1E90FF; /* Dodger blue */
-    border: 2px dotted yellow;
-}
-
-#rainfall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    background: transparent;
-    z-index: 999;
-}
-
-.raindrop {
-    position: absolute;
-    width: 2px;
-    height: 15px;
-    background-color: white;
-    opacity: 0.6;
-    z-index: 999;
+    border: 2px dotted yellow; /* Dotted yellow border */
 }
