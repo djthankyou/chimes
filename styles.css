@@ -1,22 +1,21 @@
 body {
     background-color: #0000A0; /* Deep blue background */
-    color: #FFFFFF;
-    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 aside {
     background-color: #000080; /* Navy blue */
-    color: #FFFFFF;
+    color: white;
     padding: 20px;
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     width: 200px;
-    font-size: 20px;
-    border-right: 2px dashed #FFFFFF;
+    border-right: 3px dotted white;
 }
 
 main {
@@ -29,24 +28,10 @@ main {
 
 #chimeBox {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 10px;
     padding: 20px;
-    border: 3px dotted #FFFFFF;
-    background-color: #000088; /* Lighter navy */
-}
-
-.chime {
-    cursor: pointer;
-    width: 30px;
-    height: 100px;
-    margin: 10px;
-    background-color: #1E90FF; /* Dodger blue */
-    border: 2px dotted yellow; /* Thin, dotted, yellow border */
-    transition: transform 0.2s;
-}
-
-.chime:hover {
-    transform: scale(1.1);
-}
+    border: 3px dotted white;
+    background-color: #000088; /* Lighter blue */
