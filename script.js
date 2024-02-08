@@ -37,4 +37,6 @@ function generateRain() {
 
         setTimeout(() => {
             rainContainer.removeChild(raindrop);
-        }, 100
+        }, 1000); // Matches the longest animation duration
+    }, 100);
+}
