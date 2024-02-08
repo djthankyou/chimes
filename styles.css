@@ -14,12 +14,18 @@ aside {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 200px;
+    width: 250px;
+    font-size: 16px;
     border-right: 3px dotted white;
 }
 
+aside p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
 main {
-    margin-left: 200px;
+    margin-left: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,5 +48,5 @@ main {
     width: 30px;
     height: 100px;
     background-color: #1E90FF; /* Dodger blue */
-    border: 2px dotted yellow; /* Dotted yellow border */
+    border: 2px dotted yellow;
 }
