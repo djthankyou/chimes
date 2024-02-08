@@ -1,31 +1,24 @@
-body {
-    background-color: #0000A0; /* Deep blue background */
-    color: white;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    background-color: #0000A0; /* Deep blue background */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
 }
 
 aside {
     background-color: #000080; /* Navy blue */
-    color: white;
     padding: 20px;
     position: fixed;
-    left: 0;
     top: 0;
     bottom: 0;
-    width: 250px;
-    font-size: 16px;
+    left: 0;
+    width: 200px;
     border-right: 3px dotted white;
 }
 
-aside p {
-    font-size: 14px;
-    margin-top: 20px;
-}
-
 main {
-    margin-left: 250px;
+    margin-left: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,19 +27,42 @@ main {
 
 #chimeBox {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
+    width: 60%;
+    height: 300px;
     border: 3px dotted white;
-    background-color: #000088; /* Lighter blue */
+    position: relative; /* For chime movement */
 }
 
 .chime {
-    cursor: pointer;
     width: 30px;
     height: 100px;
     background-color: #1E90FF; /* Dodger blue */
     border: 2px dotted yellow;
+    position: absolute;
+}
+
+#rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Allows click through the rain */
+}
+
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: white;
+    animation: fall linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
 }
