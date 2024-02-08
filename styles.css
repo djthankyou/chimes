@@ -65,3 +65,18 @@ main {
         transform: translateY(100vh);
     }
 }
+
+@keyframes swing {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.chime {
+    width: 30px;
+    height: 100px;
+    position: absolute;
+    border: 2px dotted yellow;
+    animation: swing 2s infinite alternate ease-in-out;
+    transform-origin: top center; /* Ensures the chime swings from the top */
+}
+
